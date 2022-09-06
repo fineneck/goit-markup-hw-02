@@ -31,7 +31,9 @@ color: #2196f3;
 .features-title,
 .work-title,
 .team-title,
-.dev-title {
+.dev-title,
+.buttons,
+.prod-title {
 color: #212121
 }
 
