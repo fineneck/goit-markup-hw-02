@@ -1,49 +1,109 @@
-.body {
-    color: #757575;
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196f3;
+    --white-text-color: #FFFFFF;
 }
+
+body {
+    background-color: tomato;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0000);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
  /*header*/
 .logo {
-    color: #2196f3;
+    color: var(--accent-text-color)
 }
 .logo-head {
-    color: #000;
+    color: #000000;
 }
 ul {
     list-style: none;
 }
 .site-nav .link {
-    color: #212121;
+    color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196f3;
+    color: var(--accent-text-color);
 }
+.site-nav .link.current {
+    color: var(--accent-text-color);
+}
+
 .cont-nav .link {
-color: #757575;
+color: var(--primary-text-color);
 }
 .cont-nav .link:hover,
 .cont-nav .link:focus {
-color: #2196f3;
+color: var(--accent-text-color);
 }
 
 /*main*/
-.hero-title,
-.features-title,
-.work-title,
-.team-title,
-.dev-title,
-.buttons,
-.prod-title {
-color: #212121
+.hero .hero-title {
+    color: var(--white-text-color);
+}
+
+.features-list .title,
+.section .work-title,
+.section .team-title,
+.developers-list .title,
+.production-list .title {
+color: var(--title-text-color);
+}
+
+.features-list .text,
+.developers-list .text,
+.production-list .text {
+    color: var(--primary-text-color);
+}
+
+/*Buttons*/
+.hero .button {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+}
+.hero .button:hover,
+.hero .button:focus {
+background-color: #188CE8;
+}
+
+.button-list .buttons {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+.button-list .buttons:hover,
+.button-list .buttons:focus {
+color: var(--white-text-color);
+background-color: var(--accent-text-color);
 }
 
 
 
-
-
+/*footer*/
 .logo-foot {
-    color: #FFFFFF;
+    color: var(--white-text-color);
 }
+.nav-foot .link {
+    color: var(--white-text-color);
+}
+.nav-foot .cont-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
 
 /*цвет шифра хэдера 212121-->
 /*web -2196f3; studio - 000000
