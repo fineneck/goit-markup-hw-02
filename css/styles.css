@@ -104,6 +104,9 @@ ul {
 .section-team {
   background-color: var(--button-bg-color);
 }
+.team-color {
+  background-color: var(--white-text-color);
+}
 .work-title,
 .team-title {
   font-weight: 700;
@@ -197,4 +200,16 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.nav-foot:hover,
+.nav-foot:focus {
+  color: var(--accent-text-color);
+}
+.nav-foot .link:hover,
+.nav-foot .link:focus {
+  color: var(--accent-text-color);
+}
+.nav-foot .cont-link:hover,
+.nav-foot .cont-link:focus {
+  color: var(--accent-text-color);
 }
